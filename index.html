@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+
+  <section>
+
+    <header>
+      <h2>
+        <a href="a" class="logo">Logo</a>
+      </h2>
+      <div class="navigation">
+        <a href="a">Home</a>
+        <a href="a">About</a>
+        <a href="a">Info</a>
+        <a href="a">Services</a>
+        <a href="a">Contact</a>
+        <a href="#" id="trigger">Login</a>
+      </div>
+
+      </div>
+      <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+      </label>
+    </header>
+    <div class="content">
+      <div class="info">
+        <h2>Like Nature <br><span>Be Creative!</span></h2>
+      </div>
+      <div class="modal_wrapper">
+        <div class="modal_container">
+          <div class="form-box">
+
+            <form>
+              <button class="close">&times;</button>
+              <h3>Login Here</h3>
+
+              <label for="username">Username</label>
+              <input type="text" placeholder="Email or Phone" id="username">
+
+              <label for="password">Password</label>
+              <input type="password" placeholder="Password" id="password">
+
+              <button>Log In</button>
+              <div class="social">
+                <div class="go"><i class="fab fa-google"></i> Google</div>
+                <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nam nemo voluptatibus quos tenetur obcaecati
+        adipisci, labore, eum saepe laboriosam aspernatur? Nihil nemo molestiae quod fuga, adipisci ducimus. Sit ea
+        exercitationem consequatur quidem voluptatum, vel, necessitatibus doloribus cumque quisquam
+        possimus beatae qui laudantium dolorum quaerat reiciendis placeat non, illum maxime doloremque consectetur!
+        Tenetur, nesciunt!</p><br>
+      <a href="a" class="info-btn">More Info</a>
+    </div>
+    </div>
+    <div class="media-icons">
+      <a href="a"><i class="fab fa-facebook-f"></i></a>
+      <a href="a"><i class="fab fa-linkedin"></i></a>
+      <a href="a"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <script>
+    const trigger = document.querySelector('#trigger');
+    const modalWrapper = document.querySelector('.modal_wrapper');
+    const closeBtn = document.querySelector('.close');
+    trigger.addEventListener('click', function () {
+      modalWrapper.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', function () {
+      modalWrapper.classList.remove('active');
+    });
+  </script>
+
+
+</body>
+
+</html>
